@@ -1,0 +1,297 @@
+:root {
+  --color-primary: #e74c3c;
+  --color-secondary: #9c372c;
+}
+
+html, body {
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header {  
+  height: 100vh;
+  background-image: url('img/Background.png');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  margin: auto 0;
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.navbar-nav li {
+  padding: 0 20px;
+}
+
+.navbar-nav li a {
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+#currentPage {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  font-weight: bold;
+}
+
+.navbar-nav li a:hover {
+  color: var(--color-primary);
+}
+
+.header-content {
+  width: 92%;
+  margin: 0 auto;
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-arrow-r {
+  transform: scaleX(-1);
+  background-image: url('img/Arrow.png');
+  width: 45px;
+  height: 45px;
+}
+
+.header-arrow-r:hover{
+  transform: scaleX(1);
+  background-image: url('img/Arrow-Primary.png');
+  cursor: pointer;
+}
+
+.header-arrow-l {
+  background-image: url('img/Arrow.png');
+  width: 45px;
+  height: 45px;
+}
+
+.header-arrow-l:hover{
+  transform: scaleX(-1);
+  background-image: url('img/Arrow-Primary.png');
+  cursor: pointer;
+}
+
+.header-main {
+  width: 60%;
+  text-align: center;
+}
+
+.btn {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+header .btn {
+  margin: 0 10px;
+}
+
+.btn-primary {
+  padding: 15px 36px;
+  background-color: var(--color-primary); 
+  -webkit-transition: all 0.3s ease-in-out; 
+}
+
+.btn-primary:hover {
+  background-color: var(--color-secondary);
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.btn-light-outline {
+  padding: 14px 49px;
+  border: 1px solid white;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.btn-light-outline:hover {
+  background-color: rgba(0, 0, 0, 0.4);  
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+header h1 {
+  font-size: 4vw;
+  letter-spacing: .5rem;
+  margin: 10px 0;
+}
+
+header h3 {
+  font-weight: 400;
+  font-size: 1.1vw;
+  letter-spacing: .05rem;
+}
+
+header p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 1.7;
+  padding: 30px 0 60px;
+  font-size: 13px;
+}
+
+/* Backgrounds */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: #f4f5f9;
+}
+
+.bg-dark {
+  background-color: #202020;
+}
+
+/* Text Styling */
+
+.text-center {
+  text-align: center;
+}
+
+.icon-text-lg {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6a6a6a;
+  padding-top: 10px;
+}
+.text-sm {
+  font-size: 11px;
+  color: #AAAAAA;
+  line-height: 2;
+}
+
+.text-md {
+  font-size: 13px;
+  color: #AAAAAA;
+  line-height: 2;
+}
+
+.icon-break {
+  width: 40px;
+  height: 1px;
+  background-color: #D5D5D5;
+  margin: 0 auto;
+}
+
+.section-one {
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.section-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.four-columns {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  text-align: center;
+  padding: 0 3%;
+}
+
+.outline {
+  height: 65px;
+  width: 65px;
+  border: 1px solid #D5D5D5; 
+  margin: 0 auto;
+  display: flex;
+  align-items: center; 
+}
+
+.outline img {
+  margin: auto auto;
+}
+
+.section-two{
+  width: 100%;
+  padding: 120px 0;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #6a6a6a;
+  letter-spacing: .1rem;
+}
+
+.two-columns .col-l {
+  margin: auto 0;
+  width: 55%;
+}
+
+.two-columns .col-l img{ 
+  width: 83%;
+}
+
+.two-columns .col-r {
+  margin: auto 0;
+  width: 45%;
+}
+
+.two-columns .col-r .text-md {
+  font-size: 12px;
+}
+.sub-heading{
+  display: flex;
+}
+
+.sub-heading h2{
+  padding-left: 14px;
+}
+
+.sub-heading div {
+  margin-top: 5px;
+  width: 4px;
+  height: 26px;
+  background-color: var(--color-primary);
+}
+
+
+
+
+
+
+
